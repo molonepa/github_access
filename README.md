@@ -1,5 +1,5 @@
 # github_access
 
-Ideas
-- visualise time of day of commits
--
+# Libraries used:
+- PyGithub
+- datetime
