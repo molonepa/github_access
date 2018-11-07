@@ -14,9 +14,8 @@ for repo in user.get_repos():
     print(repo.name)
 
     for commit in repo.get_commits():
-        #date = commit.commit.author.date
-
         # get time of day of commit from ISO 8601 date string
         time = commit.commit.author.date.time()
+        # convert datetime object to string and print
         print(str(time))
         #print(commit.commit.message)
