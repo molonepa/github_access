@@ -1,6 +1,13 @@
 import sys
 import datetime
+import json
 from github import Github
+
+# init data buffer to be written to json file
+data = {}
+data['commits'] = []
+
+outfile = open('data.json', 'w')
 
 # take username as command line argument
 uname = raw_input("Enter a github username: ")
@@ -10,12 +17,16 @@ user = g.get_user(uname)
 
 # print users repos and commit info
 for repo in user.get_repos():
-
     print(repo.name)
-
     for commit in repo.get_commits():
         # get time of day of commit from ISO 8601 date string
+        msg = commit.commit.message
         time = commit.commit.author.date.time()
         # convert datetime object to string and print
         print(str(time))
-        #print(commit.commit.message)
+        data['commits'].append({
+            'msg': msg,
+            'time': str(time)
+        })
+
+json.dump(data, outfile)
