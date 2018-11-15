@@ -1,6 +1,23 @@
-.bar-chart {
-	background-color: #ADD8E6;
-}
 .bar {
 	fill: #6666FF;
+}
+.bar:hover {
+	fill: #FAFA88;
+}
+.axis path, .axis line {
+	fill: #FAFA88;
+	stroke: #FFF;
+}
+.axis text {
+	fill: #6666FF;
+	font-size: 10px;
+}
+svg text.label {
+	fill:#6666FF;
+	font:20px;  
+	font-weight: 400;
+	text-anchor: middle;
+}
+#chartID {
+	min-width: 531px;
 }
