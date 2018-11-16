@@ -2,15 +2,15 @@
 	fill: #6666FF;
 }
 .bar:hover {
-	fill: #FAFA88;
+	fill: #87CEFA;
 }
 .axis path, .axis line {
-	fill: #FAFA88;
-	stroke: #FFF;
+	fill: none;
+	stroke: #fff;
 }
 .axis text {
 	fill: #6666FF;
-	font-size: 10px;
+	font-size: 15px;
 }
 svg text.label {
 	fill:#6666FF;

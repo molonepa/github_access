@@ -6,11 +6,12 @@ var data = [{"time":"00:00","quantity":64},{"time":"01:00","quantity":31},{"time
 
 var margin = {top:20, right:20, bottom:40, left:20};
 
-var svgHeight = (500 - margin.top - margin.bottom);
+var svgHeight = (400 - margin.top - margin.bottom);
 var svgWidth = (1920 - margin.left - margin.right);
 
 var xScale = d3.scaleBand()
-	.range([0, svgWidth]);
+	.range([0, svgWidth])
+	.padding(0.3);
 
 var yScale = d3.scaleLinear()
 	.domain([0, d3.max(data, function(d) { return d.quantity; })])
