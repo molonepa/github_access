@@ -15,8 +15,10 @@ data['commits'] = []
 
 outfile = open('data.json', 'w')
 
-# take username as command line argument
-uname = raw_input("Enter a github username: ")
+# take usernames as command line argument
+print "Enter the usernames of two github users you would like to compare..."
+uname1 = raw_input("User 1: ")
+uname2 = raw_input("User 2: ")
 
 g = Github()
 user = g.get_user(uname)
