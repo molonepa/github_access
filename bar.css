@@ -2,7 +2,7 @@
 	fill: #6666FF;
 }
 .bar:hover {
-	fill: #87CEFA;
+	fill: #B0E0E6;
 }
 .axis path, .axis line {
 	fill: none;
@@ -10,14 +10,27 @@
 }
 .axis text {
 	fill: #6666FF;
-	font-size: 15px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1em;
 }
 svg text.label {
 	fill:#6666FF;
-	font:20px;  
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1em;  
 	font-weight: 400;
 	text-anchor: middle;
 }
 #chartID {
 	min-width: 531px;
 }
+h1 { 
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.5em;
+	font-weight: 400;
+	text-align: center;
+}  
+p { 
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1em;
+	font-weight: 400;
+} 

@@ -51,6 +51,6 @@ var xAxis_g = svg.append("g")
 		.append("text")
 		.attr("class", "label")
 		.attr("x", (function(d) { return xScale(d.time) + xScale.bandwidth() / 2; }))
-		.attr("y", function(d) { return svgHeight - yScale(d.quantity) + 1; })
+		.attr("y", function(d) { return svgHeight - (0.8 * yScale(d.quantity)); })
 		.attr("dy", ".75em")
 		.text(function(d) { return d.quantity; });
