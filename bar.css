@@ -1,24 +1,40 @@
-.bar {
-	fill: #6666FF;
+.svg-container {
+	background-color: #00CC66;
 }
-.bar:hover {
+.bar1 {
+	fill: #004C99;
+}
+.bar1:hover {
 	fill: #B0E0E6;
 }
+.bar2 {
+	fill: #FFCC99;
+}
+.bar2:hover{
+	fill:#FFFF99;
+}
 .axis path, .axis line {
-	fill: none;
-	stroke: #fff;
+	stroke: #000000;
+}
+.yaxis1 path, .yaxis1 line {
+	stroke: #004C99;
+}
+.yaxis1 text {
+	fill: #004C99;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.3em;
+}
+.yaxis2 text {
+	fill: #FFCC99;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.3em;
+}
+.yaxis2 path, .yaxis2 line {
+	stroke: #FFCC99;
 }
 .axis text {
-	fill: #6666FF;
 	font-family: "Courier New", Courier, monospace;
-	font-size: 1em;
-}
-svg text.label {
-	fill:#6666FF;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 1em;  
-	font-weight: 400;
-	text-anchor: middle;
+	font-size: 1.3em;
 }
 #chartID {
 	min-width: 531px;

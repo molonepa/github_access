@@ -34,7 +34,9 @@ for u in uname:
     for i in range(0, 24):
         data['commits'].append({
             'user': u,
+
             'time': i,
+
             'quantity': qty[i]
             })
         qty[i] = 0
